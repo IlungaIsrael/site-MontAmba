@@ -65,6 +65,10 @@
                             <input type="text" id="nomEleve" name="nomEleve" class="form-control form-control-custom" placeholder="Nom de l'élève" required>
                         </div>
                         <div class="col-md-6">
+                            <label for="nomEleve" class="form-label fw-bold">Post-nom :</label>
+                            <input type="text" id="nomEleve" name="nomEleve" class="form-control form-control-custom" placeholder="Nom de l'élève" >
+                        </div>
+                        <div class="col-md-6">
                             <label for="prenomEleve" class="form-label fw-bold">Prénom(s) :</label>
                             <input type="text" id="prenomEleve" name="prenomEleve" class="form-control form-control-custom" placeholder="Prénom(s) de l'élève" required>
                         </div>
@@ -78,7 +82,6 @@
                                 <option value="">Sélectionner</option>
                                 <option value="Masculin">Masculin</option>
                                 <option value="Féminin">Féminin</option>
-                                <option value="Autre">Autre</option>
                             </select>
                         </div>
                         <div class="col-md-6">
@@ -110,11 +113,11 @@
                         </div>
                         <div class="col-md-6">
                             <label for="telephoneEleve" class="form-label fw-bold">Téléphone :</label>
-                            <input type="tel" id="telephoneEleve" name="telephoneEleve" class="form-control form-control-custom" placeholder="Ex: +243 999 123 456" required>
+                            <input type="tel" id="telephoneEleve" name="telephoneEleve" class="form-control form-control-custom" placeholder="Ex: +243 999 123 456" >
                         </div>
                         <div class="col-md-12">
                             <label for="emailEleve" class="form-label fw-bold">Email :</label>
-                            <input type="email" id="emailEleve" name="emailEleve" class="form-control form-control-custom" placeholder="nom.prenom@exemple.com" required>
+                            <input type="email" id="emailEleve" name="emailEleve" class="form-control form-control-custom" placeholder="nom.prenom@exemple.com" >
                         </div>
                     </div>
                 </div>
@@ -133,20 +136,20 @@
                                     <option value="Maternelle - Grande Section">Grande Section</option>
                                 </optgroup>
                                 <optgroup label="Primaire">
-                                    <option value="Primaire - CP1">CP1</option>
-                                    <option value="Primaire - CP2">CP2</option>
-                                    <option value="Primaire - CE1">CE1</option>
-                                    <option value="Primaire - CE2">CE2</option>
-                                    <option value="Primaire - CM1">CM1</option>
-                                    <option value="Primaire - CM2">CM2</option>
+                                    <option value="Primaire - CP1">1ère Année</option>
+                                    <option value="Primaire - CP2">2ème Année</option>
+                                    <option value="Primaire - CE1">3ème Année</option>
+                                    <option value="Primaire - CE2">4ème Année</option>
+                                    <option value="Primaire - CM1">5ème Année</option>
+                                    <option value="Primaire - CM2">6ème Année</option>
                                 </optgroup>
                                 <optgroup label="Secondaire">
-                                    <option value="Secondaire - 1ère Année">1ère Année</option>
-                                    <option value="Secondaire - 2ème Année">2ème Année</option>
-                                    <option value="Secondaire - 3ème Année">3ème Année</option>
-                                    <option value="Secondaire - 4ème Année">4ème Année</option>
-                                    <option value="Secondaire - 5ème Année">5ème Année</option>
-                                    <option value="Secondaire - 6ème Année">6ème Année</option>
+                                    <option value="Secondaire - 1ère Année">7ème Année</option>
+                                    <option value="Secondaire - 2ème Année">8ème Année</option>
+                                    <option value="Secondaire - 3ème Année">1ère Année</option>
+                                    <option value="Secondaire - 4ème Année">2ème Année</option>
+                                    <option value="Secondaire - 5ème Année">3ème Année</option>
+                                    <option value="Secondaire - 6ème Année">4ème Année</option>
                                 </optgroup>
                             </select>
                         </div>
@@ -202,11 +205,11 @@
                     <div class="row g-3">
                         <div class="col-md-12">
                             <label for="allergies" class="form-label fw-bold">Allergies (alimentaires, médicaments, etc.) :</label>
-                            <textarea id="allergies" name="allergies" rows="3" class="form-control form-control-custom" placeholder="Veuillez lister toute allergie connue"></textarea>
+                            <textarea id="allergies" name="allergies" rows="3" class="form-control form-control-custom" placeholder="Veuillez lister toute allergie connue si non Aucune"></textarea>
                         </div>
                         <div class="col-md-12">
                             <label for="conditionsMedicales" class="form-label fw-bold">Conditions médicales particulières ou traitements en cours :</label>
-                            <textarea id="conditionsMedicales" name="conditionsMedicales" rows="3" class="form-control form-control-custom" placeholder="Ex: Asthme, Diabète, etc."></textarea>
+                            <textarea id="conditionsMedicales" name="conditionsMedicales" rows="3" class="form-control form-control-custom" placeholder="Ex: Asthme, Diabète, Aucune, etc."></textarea>
                         </div>
                     </div>
                 </div>
@@ -223,7 +226,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-success btn-lg w-100 fw-bold px-4 py-3 rounded-pill shadow-lg mt-3">
-                        Soumettre le formulaire
+                       Soumettre le formulaire
                     </button>
                 </div>
             </form>

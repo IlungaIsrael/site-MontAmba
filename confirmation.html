@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>École Mont-Amba - Confirmation d'Inscription</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles spécifiques pour la page de confirmation */
+        .confirmation-icon {
+            font-size: 5rem; /* Grande taille pour l'icône */
+            color: var(--bs-success); /* Couleur verte de Bootstrap */
+            border: 5px solid var(--bs-success); /* Cercle vert autour de l'icône */
+            border-radius: 50%; /* Rendre le cercle parfait */
+            padding: 1rem;
+            display: inline-flex; /* Pour centrer le contenu et appliquer le padding */
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header class="header-gradient text-white shadow-lg py-4 fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a href="index.html" class="navbar-brand h3 fw-bold rounded-3 p-2 text-white text-decoration-none hover-bg-dark-blue">
+                    École Mont-Amba
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="About.html">À Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="Pgrams.html">Programmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary-custom text-white py-2 px-3 rounded-lg fw-semibold shadow-sm fs-5" href="enrollment.html">Inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 flex-grow-1 d-flex align-items-center justify-content-center pt-5">
+        <div class="text-center bg-white p-5 rounded-3 shadow-lg">
+            <div class="confirmation-icon mx-auto mb-4">
+                <i class="bi bi-check-lg"></i> </div>
+            <h1 class="h2 fw-bold text-success mb-3">Inscription Réussie avec Succès !</h1>
+            <p class="lead text-secondary mb-4">
+                Votre formulaire d'inscription a été soumis avec succès. Nous vous remercions pour votre intérêt pour l'École Mont-Amba.
+            </p>
+            <p class="text-muted">
+                Un membre de notre équipe vous contactera sous peu pour les prochaines étapes.
+            </p>
+            <a href="index.html" class="btn btn-primary-custom btn-lg fw-semibold mt-4">
+                Retourner à l'Accueil
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer-custom p-4 mt-auto rounded-top-3 shadow-inner">
+        <div class="container text-center text-sm">
+            <p class="mb-1">&copy; <span id="current-year-confirmation"></span> École Mont-Amba. Tous droits réservés.</p>
+            <p class="mb-0">Située près de l'UNIKIN, Kinshasa, RDC.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Met à jour l'année courante dans le pied de page
+        document.getElementById('current-year-confirmation').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
