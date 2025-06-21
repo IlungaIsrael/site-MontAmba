@@ -30,10 +30,10 @@
                             <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="About.html">À Propos</a>
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="about.html">À Propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="Pgrams.html">Programmes</a>
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="programs.html">Programmes</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-primary-custom text-white py-2 px-3 rounded-lg fw-semibold shadow-sm fs-5" href="enrollment.html">Inscription</a>
@@ -55,7 +55,7 @@
                 Veuillez remplir ce formulaire avec attention pour l'inscription de votre enfant à l'École Mont-Amba.
             </p>
 
-            <form id="enrollmentForm" action="confirmation.html" method="post" class="space-y-4">
+            <form id="enrollmentForm" action="#" method="post" class="space-y-4"> <!-- Action du formulaire changée à '#' car le lien gère la redirection -->
                 <!-- Section 1: Informations de l'élève -->
                 <div class="form-section mb-4">
                     <h2 class="h4 fw-semibold text-info-emphasis mb-4">1. Informations de l'élève</h2>
@@ -65,8 +65,8 @@
                             <input type="text" id="nomEleve" name="nomEleve" class="form-control form-control-custom" placeholder="Nom de l'élève" required>
                         </div>
                         <div class="col-md-6">
-                            <label for="nomEleve" class="form-label fw-bold">Post-nom :</label>
-                            <input type="text" id="nomEleve" name="nomEleve" class="form-control form-control-custom" placeholder="Nom de l'élève" >
+                            <label for="postNomEleve" class="form-label fw-bold">Post-nom :</label>
+                            <input type="text" id="postNomEleve" name="postNomEleve" class="form-control form-control-custom" placeholder="Post-nom de l'élève">
                         </div>
                         <div class="col-md-6">
                             <label for="prenomEleve" class="form-label fw-bold">Prénom(s) :</label>
@@ -113,11 +113,11 @@
                         </div>
                         <div class="col-md-6">
                             <label for="telephoneEleve" class="form-label fw-bold">Téléphone :</label>
-                            <input type="tel" id="telephoneEleve" name="telephoneEleve" class="form-control form-control-custom" placeholder="Ex: +243 999 123 456" >
+                            <input type="tel" id="telephoneEleve" name="telephoneEleve" class="form-control form-control-custom" placeholder="Ex: +243 999 123 456">
                         </div>
                         <div class="col-md-12">
                             <label for="emailEleve" class="form-label fw-bold">Email :</label>
-                            <input type="email" id="emailEleve" name="emailEleve" class="form-control form-control-custom" placeholder="nom.prenom@exemple.com" >
+                            <input type="email" id="emailEleve" name="emailEleve" class="form-control form-control-custom" placeholder="nom.prenom@exemple.com">
                         </div>
                     </div>
                 </div>
@@ -136,20 +136,20 @@
                                     <option value="Maternelle - Grande Section">Grande Section</option>
                                 </optgroup>
                                 <optgroup label="Primaire">
-                                    <option value="Primaire - CP1">1ère Année</option>
-                                    <option value="Primaire - CP2">2ème Année</option>
-                                    <option value="Primaire - CE1">3ème Année</option>
-                                    <option value="Primaire - CE2">4ème Année</option>
-                                    <option value="Primaire - CM1">5ème Année</option>
-                                    <option value="Primaire - CM2">6ème Année</option>
+                                    <option value="Primaire - CP1">CP1 (1ère Année)</option>
+                                    <option value="Primaire - CP2">CP2 (2ème Année)</option>
+                                    <option value="Primaire - CE1">CE1 (3ème Année)</option>
+                                    <option value="Primaire - CE2">CE2 (4ème Année)</option>
+                                    <option value="Primaire - CM1">CM1 (5ème Année)</option>
+                                    <option value="Primaire - CM2">CM2 (6ème Année)</option>
                                 </optgroup>
                                 <optgroup label="Secondaire">
-                                    <option value="Secondaire - 1ère Année">7ème Année</option>
-                                    <option value="Secondaire - 2ème Année">8ème Année</option>
-                                    <option value="Secondaire - 3ème Année">1ère Année</option>
-                                    <option value="Secondaire - 4ème Année">2ème Année</option>
-                                    <option value="Secondaire - 5ème Année">3ème Année</option>
-                                    <option value="Secondaire - 6ème Année">4ème Année</option>
+                                    <option value="Secondaire - 1ère Année">1ère Année Secondaire (7ème)</option>
+                                    <option value="Secondaire - 2ème Année">2ème Année Secondaire (8ème)</option>
+                                    <option value="Secondaire - 3ème Année">3ème Année Secondaire (Tronc Commun)</option>
+                                    <option value="Secondaire - 4ème Année">4ème Année Secondaire (Option)</option>
+                                    <option value="Secondaire - 5ème Année">5ème Année Secondaire (Option)</option>
+                                    <option value="Secondaire - 6ème Année">6ème Année Secondaire (Option)</option>
                                 </optgroup>
                             </select>
                         </div>
@@ -225,9 +225,10 @@
                         </label>
                     </div>
 
-                    <button type="submit" class="btn btn-success btn-lg w-100 fw-bold px-4 py-3 rounded-pill shadow-lg mt-3">
-                       <a href="confirmation.html">Soumettre le formulaire</a>
-                    </button>
+                    <!-- Le bouton est maintenant un lien <a> stylisé comme un bouton -->
+                    <a href="confirmation.html" class="btn btn-success btn-lg w-100 fw-bold px-4 py-3 rounded-pill shadow-lg mt-3 text-white text-decoration-none d-inline-block">
+                        Soumettre le formulaire
+                    </a>
                 </div>
             </form>
         </section>

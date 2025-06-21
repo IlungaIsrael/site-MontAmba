@@ -92,3 +92,15 @@ body {
 .h-250px {
     height: 250px;
 }
+
+/* Styles spécifiques pour la page de confirmation */
+.confirmation-icon {
+    font-size: 5rem; /* Grande taille pour l'icône */
+    color: var(--bs-success); /* Couleur verte de Bootstrap */
+    border: 5px solid var(--bs-success); /* Cercle vert autour de l'icône */
+    border-radius: 50%; /* Rendre le cercle parfait */
+    padding: 1rem;
+    display: inline-flex; /* Pour centrer le contenu et appliquer le padding */
+    align-items: center;
+    justify-content: center;
+}
