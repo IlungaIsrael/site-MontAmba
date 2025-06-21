@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>École Mont-Amba - Inscription</title>
+    <!-- Chargement de Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Police Inter pour une meilleure esthétique -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Chargement de votre fichier CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête (Header) -->
+    <header class="header-gradient text-white shadow-lg py-4 fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a href="index.html" class="navbar-brand h3 fw-bold rounded-3 p-2 text-white text-decoration-none hover-bg-dark-blue">
+                    École Mont-Amba
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="About.html">À Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="Pgrams.html">Programmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary-custom text-white py-2 px-3 rounded-lg fw-semibold shadow-sm fs-5" href="enrollment.html">Inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container my-5 flex-grow-1">
+        <section class="bg-white p-5 rounded-3 card-custom">
+            <h1 class="h2 fw-bold text-primary mb-4 text-center">Formulaire d'Inscription</h1>
+            <p class="lead text-center text-secondary mb-4 mx-auto" style="max-width: 700px;">
+                Veuillez remplir ce formulaire avec attention pour l'inscription de votre enfant à l'École Mont-Amba.
+            </p>
+
+            <form id="enrollmentForm" action="confirmation.html" method="post" class="space-y-4">
+                <!-- Section 1: Informations de l'élève -->
+                <div class="form-section mb-4">
+                    <h2 class="h4 fw-semibold text-info-emphasis mb-4">1. Informations de l'élève</h2>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nomEleve" class="form-label fw-bold">Nom :</label>
+                            <input type="text" id="nomEleve" name="nomEleve" class="form-control form-control-custom" placeholder="Nom de l'élève" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="prenomEleve" class="form-label fw-bold">Prénom(s) :</label>
+                            <input type="text" id="prenomEleve" name="prenomEleve" class="form-control form-control-custom" placeholder="Prénom(s) de l'élève" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="dateNaissance" class="form-label fw-bold">Date de naissance :</label>
+                            <input type="date" id="dateNaissance" name="dateNaissance" class="form-control form-control-custom" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="sexe" class="form-label fw-bold">Sexe :</label>
+                            <select id="sexe" name="sexe" class="form-select form-select-custom" required>
+                                <option value="">Sélectionner</option>
+                                <option value="Masculin">Masculin</option>
+                                <option value="Féminin">Féminin</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="nationalite" class="form-label fw-bold">Nationalité :</label>
+                            <input type="text" id="nationalite" name="nationalite" class="form-control form-control-custom" placeholder="Nationalité" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lieuNaissance" class="form-label fw-bold">Lieu de naissance :</label>
+                            <input type="text" id="lieuNaissance" name="lieuNaissance" class="form-control form-control-custom" placeholder="Lieu de naissance" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Coordonnées -->
+                <div class="form-section mb-4">
+                    <h2 class="h4 fw-semibold text-info-emphasis mb-4">2. Coordonnées de l'élève</h2>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="adresse" class="form-label fw-bold">Adresse :</label>
+                            <input type="text" id="adresse" name="adresse" class="form-control form-control-custom" placeholder="Adresse complète" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="ville" class="form-label fw-bold">Ville :</label>
+                            <input type="text" id="ville" name="ville" class="form-control form-control-custom" placeholder="Ville" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="pays" class="form-label fw-bold">Pays :</label>
+                            <input type="text" id="pays" name="pays" class="form-control form-control-custom" placeholder="Pays" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="telephoneEleve" class="form-label fw-bold">Téléphone :</label>
+                            <input type="tel" id="telephoneEleve" name="telephoneEleve" class="form-control form-control-custom" placeholder="Ex: +243 999 123 456" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="emailEleve" class="form-label fw-bold">Email :</label>
+                            <input type="email" id="emailEleve" name="emailEleve" class="form-control form-control-custom" placeholder="nom.prenom@exemple.com" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Informations académiques -->
+                <div class="form-section mb-4">
+                    <h2 class="h4 fw-semibold text-info-emphasis mb-4">3. Informations académiques</h2>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="niveauSouhaite" class="form-label fw-bold">Niveau scolaire souhaité :</label>
+                            <select id="niveauSouhaite" name="niveauSouhaite" class="form-select form-select-custom" required>
+                                <option value="">Sélectionner</option>
+                                <optgroup label="Maternelle">
+                                    <option value="Maternelle - Petite Section">Petite Section</option>
+                                    <option value="Maternelle - Moyenne Section">Moyenne Section</option>
+                                    <option value="Maternelle - Grande Section">Grande Section</option>
+                                </optgroup>
+                                <optgroup label="Primaire">
+                                    <option value="Primaire - CP1">CP1</option>
+                                    <option value="Primaire - CP2">CP2</option>
+                                    <option value="Primaire - CE1">CE1</option>
+                                    <option value="Primaire - CE2">CE2</option>
+                                    <option value="Primaire - CM1">CM1</option>
+                                    <option value="Primaire - CM2">CM2</option>
+                                </optgroup>
+                                <optgroup label="Secondaire">
+                                    <option value="Secondaire - 1ère Année">1ère Année</option>
+                                    <option value="Secondaire - 2ème Année">2ème Année</option>
+                                    <option value="Secondaire - 3ème Année">3ème Année</option>
+                                    <option value="Secondaire - 4ème Année">4ème Année</option>
+                                    <option value="Secondaire - 5ème Année">5ème Année</option>
+                                    <option value="Secondaire - 6ème Année">6ème Année</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="ecolePrecedente" class="form-label fw-bold">École précédente (si applicable) :</label>
+                            <input type="text" id="ecolePrecedente" name="ecolePrecedente" class="form-control form-control-custom" placeholder="Nom de l'école" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="anneeScolairePrecedente" class="form-label fw-bold">Année scolaire précédente :</label>
+                            <input type="text" id="anneeScolairePrecedente" name="anneeScolairePrecedente" class="form-control form-control-custom" placeholder="Ex: 2023-2024" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="moyennePrecedente" class="form-label fw-bold">Moyenne générale de l'année précédente (sur 100) :</label>
+                            <input type="number" id="moyennePrecedente" name="moyennePrecedente" class="form-control form-control-custom" placeholder="Ex: 85" min="0" max="100" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: Informations du parent/tuteur -->
+                <div class="form-section mb-4">
+                    <h2 class="h4 fw-semibold text-info-emphasis mb-4">4. Informations du parent / tuteur légal</h2>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nomParent" class="form-label fw-bold">Nom :</label>
+                            <input type="text" id="nomParent" name="nomParent" class="form-control form-control-custom" placeholder="Nom du parent/tuteur" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="prenomParent" class="form-label fw-bold">Prénom(s) :</label>
+                            <input type="text" id="prenomParent" name="prenomParent" class="form-control form-control-custom" placeholder="Prénom(s) du parent/tuteur" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="relationParent" class="form-label fw-bold">Relation avec l'élève :</label>
+                            <input type="text" id="relationParent" name="relationParent" class="form-control form-control-custom" placeholder="Ex: Père, Mère, Tuteur légal" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="telephoneParent" class="form-label fw-bold">Téléphone :</label>
+                            <input type="tel" id="telephoneParent" name="telephoneParent" class="form-control form-control-custom" placeholder="Ex: +243 999 123 456" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="emailParent" class="form-label fw-bold">Email :</label>
+                            <input type="email" id="emailParent" name="emailParent" class="form-control form-control-custom" placeholder="parent.tuteur@exemple.com" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="professionParent" class="form-label fw-bold">Profession :</label>
+                            <input type="text" id="professionParent" name="professionParent" class="form-control form-control-custom" placeholder="Profession du parent/tuteur">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5: Informations médicales (optionnel mais utile) -->
+                <div class="form-section mb-4">
+                    <h2 class="h4 fw-semibold text-info-emphasis mb-4">5. Informations médicales (Facultatif)</h2>
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <label for="allergies" class="form-label fw-bold">Allergies (alimentaires, médicaments, etc.) :</label>
+                            <textarea id="allergies" name="allergies" rows="3" class="form-control form-control-custom" placeholder="Veuillez lister toute allergie connue"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="conditionsMedicales" class="form-label fw-bold">Conditions médicales particulières ou traitements en cours :</label>
+                            <textarea id="conditionsMedicales" name="conditionsMedicales" rows="3" class="form-control form-control-custom" placeholder="Ex: Asthme, Diabète, etc."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 6: Consentement et Soumission -->
+                <div class="form-section mb-4">
+                    <h2 class="h4 fw-semibold text-info-emphasis mb-4">6. Consentement</h2>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="consentement" name="consentement" class="form-check-input" required>
+                        <label for="consentement" class="form-check-label text-secondary-emphasis">
+                            Je certifie que toutes les informations fournies ci-dessus sont exactes et complètes,
+                            et j'accepte les conditions d'inscription de l'École Mont-Amba.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-lg w-100 fw-bold px-4 py-3 rounded-pill shadow-lg mt-3">
+                        Soumettre le formulaire
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pied de page (Footer) -->
+    <footer class="footer-custom p-4 mt-auto rounded-top-3 shadow-inner">
+        <div class="container text-center text-sm">
+            <p class="mb-1">&copy; <span id="current-year-enrollment"></span> École Mont-Amba. Tous droits réservés.</p>
+            <p class="mb-0">Située près de l'UNIKIN, Kinshasa, RDC.</p>
+        </div>
+    </footer>
+
+    <!-- Chargement de Bootstrap JS (avec Popper.js pour les fonctionnalités comme les dropdowns, navbars) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('current-year-enrollment').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

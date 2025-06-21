@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>École Mont-Amba - À Propos</title>
+    <!-- Chargement de Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Police Inter pour une meilleure esthétique -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Chargement de votre fichier CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête (Header) -->
+    <header class="header-gradient text-white shadow-lg py-4 fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a href="index.html" class="navbar-brand h3 fw-bold rounded-3 p-2 text-white text-decoration-none hover-bg-dark-blue">
+                    École Mont-Amba
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="About.html">À Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="Pgrams.html">Programmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary-custom text-white py-2 px-3 rounded-lg fw-semibold shadow-sm fs-5" href="enrollment.html">Inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white py-2 px-3 rounded-lg hover-bg-dark-blue fs-5" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container my-5 flex-grow-1">
+        <section class="bg-white p-5 rounded-3 card-custom">
+            <h1 class="h2 fw-bold text-primary mb-4 text-center">À Propos de l'École Mont-Amba</h1>
+            <p class="text-secondary-emphasis mb-4">
+                L'École Mont-Amba est une institution éducative de premier plan, dédiée à l'excellence
+                académique et au développement holistique de ses élèves. Fondée en [Année de Fondation, ex: 1995],
+                notre école s'est forgée une réputation d'établissement où chaque enfant peut s'épanouir
+                intellectuellement, socialement et personnellement.
+            </p>
+
+            <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                    <h2 class="h4 fw-semibold text-info-emphasis mb-3">Notre Pédagogie</h2>
+                    <p class="text-secondary-emphasis">
+                        Nous adoptons une approche pédagogique centrée sur l'élève, favorisant la participation
+                        active, la découverte et la résolution de problèmes. Nos programmes sont conçus pour
+                        stimuler la curiosité, encourager la pensée critique et développer les compétences
+                        essentielles pour le 21e siècle. Nos enseignants qualifiés et passionnés accompagnent
+                        chaque élève avec bienveillance et rigueur.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="h4 fw-semibold text-info-emphasis mb-3">Nos Infrastructures</h2>
+                    <p class="text-secondary-emphasis">
+                        Située dans un cadre verdoyant et calme, à proximité immédiate de l'Université de Kinshasa (UNIKIN),
+                        l'École Mont-Amba dispose d'infrastructures modernes et adaptées :
+                        salles de classe spacieuses et équipées, laboratoires scientifiques, bibliothèque,
+                        salle informatique, terrains de sport, et une infirmerie.
+                        Nous offrons un environnement sécurisé et propice à l'apprentissage.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-4 text-center">
+                <h2 class="h4 fw-semibold text-info-emphasis mb-3">Nos Programmes Scolaires</h2>
+                <p class="text-secondary-emphasis mx-auto" style="max-width: 600px;">
+                    Pour une présentation détaillée de nos programmes, veuillez visiter notre <a class="btn btn-link p-0 text-decoration-underline" href="Pgrams.html">page dédiée aux Programmes</a>.
+                </p>
+            </div>
+
+            <div class="mt-5 text-center">
+                <img
+                    src="salle2.JPG"
+                    alt="[Image of a modern classroom]"
+                    class="img-fluid rounded-3 shadow-lg mx-auto"
+                    onerror="this.onerror=null; this.src='https://placehold.co/800x450/B0E0E6/white?text=Image+de+salle+de+classe';"
+                >
+                <p class="text-muted mt-2">Une de nos salles de classe modernes</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page (Footer) -->
+    <footer class="footer-custom p-4 mt-auto rounded-top-3 shadow-inner">
+        <div class="container text-center text-sm">
+            <p class="mb-1">&copy; <span id="current-year-about"></span> École Mont-Amba. Tous droits réservés.</p>
+            <p class="mb-0">Située près de l'UNIKIN, Kinshasa, RDC.</p>
+        </div>
+    </footer>
+
+    <!-- Chargement de Bootstrap JS (avec Popper.js pour les fonctionnalités comme les dropdowns, navbars) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('current-year-about').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

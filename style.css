@@ -1,0 +1,94 @@
+/* Styles personnalisés pour l'École Mont-Amba */
+
+/* Styles généraux du corps */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; /* Gris très clair pour le fond */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 100px; /* Espace pour la barre de navigation fixe */
+}
+
+/* En-tête */
+.header-gradient {
+    background: linear-gradient(to right, #1a237e, #0d47a1); /* Bleu foncé et bleu marine */
+}
+
+/* Boutons personnalisés */
+.btn-primary-custom {
+    background-color: #1a73e8; /* Bleu Google */
+    border-color: #1a73e8;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50px; /* Boutons plus arrondis */
+}
+.btn-primary-custom:hover {
+    background-color: #0e60cb;
+    border-color: #0e60cb;
+    transform: scale(1.05);
+}
+
+.btn-secondary-custom {
+    background-color: #e0e0e0; /* Gris clair */
+    border-color: #e0e0e0;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50px; /* Boutons plus arrondis */
+}
+.btn-secondary-custom:hover {
+    background-color: #d0d0d0;
+    border-color: #d0d0d0;
+    transform: scale(1.05);
+}
+
+/* Cartes et sections de contenu */
+.card-custom {
+    border-radius: 15px; /* Coins arrondis pour les sections */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08); /* Ombre plus douce */
+}
+
+/* Sections de formulaire */
+.form-section {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: #fdfefe;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Champs de formulaire personnalisés */
+.form-control-custom, .form-select-custom {
+    border-radius: 8px; /* Coins arrondis pour les champs de formulaire */
+    padding: 0.75rem 1rem;
+}
+.form-control-custom:focus, .form-select-custom:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 0.25rem rgba(26, 115, 232, 0.25);
+}
+
+/* Pied de page */
+.footer-custom {
+    background-color: #343a40; /* Gris foncé */
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: auto; /* Pousse le footer vers le bas */
+}
+
+/* Utilitaires pour hover (pour les boutons de navigation) */
+.hover-bg-dark-blue:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Légèrement transparent blanc */
+    border-radius: 0.5rem;
+}
+
+/* La classe .cursor-pointer n'a d'effet que visuel sans JS */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Hauteurs fixes pour les placeholders d'images/cartes */
+.h-250px {
+    height: 250px;
+}
